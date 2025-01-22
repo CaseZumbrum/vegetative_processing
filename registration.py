@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-# Open the image files.
 img1_color = cv2.imread("prop_images/cropped.png")  # Image to be aligned.
 img2_color = cv2.imread("prop_images/ref.png")    # Reference image.
 
