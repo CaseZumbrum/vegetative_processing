@@ -1,0 +1,4 @@
+.venv/
+prop_images/
+.mypy_cache/
+.vscode/

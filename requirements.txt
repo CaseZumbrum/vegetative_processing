@@ -1,0 +1,6 @@
+pillow
+notebook
+matplotlib
+numpy
+rasterio
+opencv-python
