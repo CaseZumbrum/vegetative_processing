@@ -4,3 +4,4 @@ demo_images/
 .mypy_cache/
 .vscode/
 .ipynb_checkpoints/
+ag_output/

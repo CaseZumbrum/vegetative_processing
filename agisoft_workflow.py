@@ -20,12 +20,8 @@ def find_files(folder, types):
     ]
 
 
-if len(sys.argv) < 3:
-    print("Usage: general_workflow.py <image_folder> <output_folder>")
-    raise Exception("Invalid script arguments")
-
-image_folder = sys.argv[1]
-output_folder = sys.argv[2]
+image_folder = "C:/Users/AgriBugs/Documents/vegetative_processing/prop_images/x5-20241122T175142Z/x5"
+output_folder = "C:/Users/AgriBugs/Documents/vegetative_processing/ag_output"
 
 photos = find_files(image_folder, [".jpg", ".jpeg", ".tif", ".tiff"])
 
@@ -78,17 +74,6 @@ if has_transform:
 
 # export results
 chunk.exportReport(output_folder + "/report.pdf")
-
-if chunk.model:
-    chunk.exportModel(output_folder + "/model.obj")
-
-if chunk.point_cloud:
-    chunk.exportPointCloud(
-        output_folder + "/point_cloud.las", source_data=Metashape.PointCloudData
-    )
-
-if chunk.elevation:
-    chunk.exportRaster(output_folder + "/dem.tif", source_data=Metashape.ElevationData)
 
 if chunk.orthomosaic:
     chunk.exportRaster(
