@@ -5,3 +5,4 @@ demo_images/
 .vscode/
 .ipynb_checkpoints/
 ag_output/
+__pycache__/
